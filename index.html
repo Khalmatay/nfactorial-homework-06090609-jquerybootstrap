@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hw</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    function setWhiteTHeme() {
+        localStorage.setItem("theme","light");
+        const root = document.getElementById("mainContainer")
+        root.className="light";
+    }
+    function setDarkTheme() {
+        localStorage.setItem("theme","dark");
+        const root = document.getElementById("mainContainer")
+        root.className="dark"
+    }
+    function getValue(){
+        const theme = localStorage.getItem("theme");
+        console.log("sddsdsdsfs",theme)
+        const root = document.getElementById("mainContainer")
+        root.className=theme;
+    }
+    const setCookie = () => {
+        document.cookie = "user=Nurbek; expires=Wed, 15 Jun 2022 12:00:00 GMT"
+        document.cookie = "user1=323; expires=Sun, 12 Jun 2022 13:08:00 GMT"
+
+    }
+</script>
+<body onload="getValue()">
+    <div id="mainContainer" style="width: 100vw; height: 100vh;">
+        <h1>
+            <button onclick="setWhiteTHeme()">Set light theme</button>
+            <button onclick="setDarkTheme()">Set dark theme</button>
+            <button onclick="setCookie()">setCookie</button>
+        </h1>
+    </div>
+</body>
+</html>
