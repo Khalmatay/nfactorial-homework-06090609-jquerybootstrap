@@ -8,6 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "consoleHello": "echo 'Hello!sadasdas'",
+    "consoleNurbek": "echo 'Hello!sadasdas'",
+
     "Nurbek": "node index.js && echo 'Hello!sadasdas' ",
     "pushToGit": "git add . && git commit -m 'some commit text' && git push"
 
